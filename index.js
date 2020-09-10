@@ -11,10 +11,8 @@ function createMenuItem(name, cost, category) {
   var obj = {
     name: name, 
     price: cost, 
-    category: category
-            }
-    return obj; 
-}
+    category: category, }
+    return obj; }
 
 var coffee = createMenuItem("Coffee", 1, "Drink");
 var pizzaSlice = createMenuItem("Pizza by the slice", 1, "Food");
@@ -27,8 +25,8 @@ console.log(beans.name + " costs $" + beans.price + " and is " + beans.category)
 console.log(`${beans.name} costs $${beans.price} and is ${beans.category}`); //Fancier log but the same thing.
 
 /* Task 2: You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to your burger object that automatically calculates price given a string as a parameter. */
+
 function createMenuItem(name, cost, category) {
-  
   var obj = {
     name: name, 
     price: cost, 
@@ -38,11 +36,9 @@ function createMenuItem(name, cost, category) {
         var discounted = .75;
       } else {
         var discounted = .9; }
-      return this.price * discounted;
-    }
-  }
-    return obj; 
-}
+      return this.price * discounted; }
+            }
+    return obj;                               }
 
 var coffee = createMenuItem("Coffee", 1, "Drink");
 var pizzaSlice = createMenuItem("Pizza by the slice", 1, "Food");
@@ -54,8 +50,7 @@ var beans = createMenuItem("Beans", 990, "Food");
 console.log(beans.name + " costs $" + beans.price + " and is " + beans.category); //Change "beans" with any other var.
 console.log(`${beans.name} costs $${beans.price} and is ${beans.category}`); //Fancier log but the same thing.
 
-console.log(beans.discount("none")); //"teacher" and "student" will both return the price with a discount, anything else such as "none" will give a smaller discount. Also no fancy console.log because it asks for just a number.
-
+console.log(beans.discount("none")); //"teacher" and "student" will both return the price with a discount, anything else such as "none" will give the smaller discount. Also no fancy console.log because it asks for just a number.
 
 ///////////////Reviews (MVP)///////////////////
 
@@ -67,7 +62,7 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
     {name: "Julius", rating: 2, feedback: "I was largely unimpressed by this venue. Nothing special on the menu and too expensive. The atmosphere is polarizing, and not for me, but I think some would like it." },
     {name:"Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."},
     {name:"Reyna", rating: 3.5, feedback: ""},
-]
+                ]
 
 /* Task 3: Console.log just Julius' feedback */
 
